@@ -20,4 +20,4 @@ def stats():
     all_classes = {"Amenity": "amenities", "City": "cities", "Place": "places",
                    "Review": "reviews", "State": "states", "User": "users"}
     return jsonify({v: storage.count(k) for k, v in all_classes.items()
-        if storage.count(k)})
+                   if storage.count(k)})
