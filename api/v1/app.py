@@ -16,15 +16,9 @@ app.register_blueprint(app_views)
 
 
 @app.errorhandler(404)
-<<<<<<< HEAD
 def error_404(error):
     '''Handles the 404 HTTP error code.'''
     return jsonify("error:" "Not found"), 404
-=======
-def page_not_found(e):
-    """error handler function"""
-    return jsonify(error="Not found"), 404
->>>>>>> 2eb5053063e243b68fdfdb91cf6f27653cb746a9
 
 
 @app.teardown_appcontext
